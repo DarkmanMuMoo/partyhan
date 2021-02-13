@@ -1,6 +1,6 @@
-package com.example.parthan.security
+package com.example.partyhan.security
 
-import com.example.parthan.model.UserData
+import com.example.partyhan.model.UserData
 import io.jsonwebtoken.Claims
 import io.jsonwebtoken.JwtException
 import io.jsonwebtoken.Jwts

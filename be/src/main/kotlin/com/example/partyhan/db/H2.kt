@@ -1,4 +1,4 @@
-package com.example.parthan.db
+package com.example.partyhan.db
 
 import org.h2.tools.Server
 import org.springframework.context.event.ContextClosedEvent
@@ -14,7 +14,7 @@ class H2 {
   @EventListener(ContextRefreshedEvent::class)
   @Throws(SQLException::class)
   fun start() {
-    webServer = Server.createWebServer("-webPort", 8081.toString(), "-tcpAllowOthers").start()
+    webServer = Server.createWebServer("-webPort", 8081.toString(), "-tcpAllowOthers", "-webAllowOthers").start()
   }
 
   @EventListener(ContextClosedEvent::class)

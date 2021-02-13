@@ -1,8 +1,8 @@
-package com.example.parthan.controller
+package com.example.partyhan.controller
 
-import com.example.parthan.model.UserData
-import com.example.parthan.repository.UserDataRepository
-import com.example.parthan.security.JwtTokenProvider
+import com.example.partyhan.model.UserData
+import com.example.partyhan.repository.UserDataRepository
+import com.example.partyhan.security.JwtTokenProvider
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.security.crypto.password.PasswordEncoder

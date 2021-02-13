@@ -1,4 +1,4 @@
-package com.example.parthan
+package com.example.partyhan
 
 import io.r2dbc.spi.ConnectionFactory
 import org.springframework.boot.autoconfigure.SpringBootApplication

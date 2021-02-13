@@ -1,6 +1,6 @@
-package com.example.parthan.service
+package com.example.partyhan.service
 
-import com.example.parthan.security.JwtTokenProvider
+import com.example.partyhan.security.JwtTokenProvider
 import org.springframework.security.authentication.ReactiveAuthenticationManager
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.Authentication

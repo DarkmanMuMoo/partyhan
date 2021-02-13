@@ -1,6 +1,6 @@
-package com.example.parthan.repository
+package com.example.partyhan.repository
 
-import com.example.parthan.model.UserData
+import com.example.partyhan.model.UserData
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 import reactor.core.publisher.Mono
 

@@ -1,4 +1,4 @@
-package com.example.parthan.service
+package com.example.partyhan.service
 
 import org.springframework.http.HttpHeaders
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken

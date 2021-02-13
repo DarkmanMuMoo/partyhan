@@ -1,6 +1,6 @@
-package com.example.parthan.repository
+package com.example.partyhan.repository
 
-import com.example.parthan.model.Party
+import com.example.partyhan.model.Party
 import org.springframework.data.r2dbc.repository.Modifying
 import org.springframework.data.r2dbc.repository.Query
 import org.springframework.data.relational.core.mapping.Column

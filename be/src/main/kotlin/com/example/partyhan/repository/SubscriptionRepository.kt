@@ -1,6 +1,6 @@
-package com.example.parthan.repository
+package com.example.partyhan.repository
 
-import com.example.parthan.model.Subscription
+import com.example.partyhan.model.Subscription
 import org.springframework.data.r2dbc.repository.Query
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 import reactor.core.publisher.Flux

@@ -1,10 +1,10 @@
-package com.example.parthan.controller
+package com.example.partyhan.controller
 
-import com.example.parthan.model.Party
-import com.example.parthan.model.Subscription
-import com.example.parthan.repository.PartyRecord
-import com.example.parthan.repository.PartyRepository
-import com.example.parthan.repository.SubscriptionRepository
+import com.example.partyhan.model.Party
+import com.example.partyhan.model.Subscription
+import com.example.partyhan.repository.PartyRecord
+import com.example.partyhan.repository.PartyRepository
+import com.example.partyhan.repository.SubscriptionRepository
 import io.jsonwebtoken.Claims
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

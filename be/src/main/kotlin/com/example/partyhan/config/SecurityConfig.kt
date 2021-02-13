@@ -1,6 +1,6 @@
-package com.example.parthan.config
+package com.example.partyhan.config
 
-import com.example.parthan.service.SecurityContextRepository
+import com.example.partyhan.service.SecurityContextRepository
 import org.springframework.context.annotation.Bean
 import org.springframework.http.HttpMethod
 import org.springframework.http.HttpStatus.FORBIDDEN

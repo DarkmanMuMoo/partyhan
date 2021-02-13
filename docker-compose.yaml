@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  partyhan-be:
+    image: mumoo/partyhan:1.0.1
+    ports:
+      - 8080:8080
+      - 8081:8081
+  partyhan-fe:
+    image: mumoo/partyhan-fe:1.0
+    ports:
+      - 80:80     
+       

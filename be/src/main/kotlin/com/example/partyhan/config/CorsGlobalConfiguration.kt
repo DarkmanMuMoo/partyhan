@@ -1,4 +1,4 @@
-package com.example.parthan.config
+package com.example.partyhan.config
 
 
 import org.springframework.context.annotation.Configuration

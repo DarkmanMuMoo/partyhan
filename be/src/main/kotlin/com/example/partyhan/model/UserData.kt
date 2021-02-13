@@ -1,4 +1,4 @@
-package com.example.parthan.model
+package com.example.partyhan.model
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Column
