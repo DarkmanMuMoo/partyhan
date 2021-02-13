@@ -2,7 +2,9 @@ logging:
   level:
     root: INFO
     org.flywaydb: DEBUG
-
+server:
+  error:
+    include-message: always
 spring:
   h2:
     console:
