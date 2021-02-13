@@ -11,6 +11,5 @@ data class Party(
     @Column("owner_id")
     val ownerId: Long? = null,
     val name: String? = null,
-    val description: String? = null,
-    val size: Int? = 0
+    val size: Int? = 0,
 )

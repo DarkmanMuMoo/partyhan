@@ -1,7 +1,7 @@
 package com.example.parthan.controller
 
 import com.example.parthan.model.UserData
-import com.example.parthan.repository.UserDateRepository
+import com.example.parthan.repository.UserDataRepository
 import com.example.parthan.security.JwtTokenProvider
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
@@ -16,7 +16,7 @@ import java.time.Instant
 
 @RestController
 @RequestMapping("/api/authentication")
-class AuthenticationController(private val userRepository: UserDateRepository, private val encoder: PasswordEncoder, private val jwtTokenProvider: JwtTokenProvider) {
+class AuthenticationController(private val userRepository: UserDataRepository, private val encoder: PasswordEncoder, private val jwtTokenProvider: JwtTokenProvider) {
 
 
   @PostMapping("signup")
@@ -25,7 +25,7 @@ class AuthenticationController(private val userRepository: UserDateRepository, p
     val encodePassword = encoder.encode(userRequest.password)
     val userData = UserData(
         null,
-        userRequest.email!!, userRequest.username!!, encodePassword, Instant.now()
+        userRequest.email!!, encodePassword, Instant.now()
     )
 
     return userRepository.findByEmail(userRequest.email!!)
@@ -37,7 +37,7 @@ class AuthenticationController(private val userRepository: UserDateRepository, p
           if (it.second) {
             throw ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "email ${it.first.email} already exist")
           } else {
-            ResponseEntity.ok(UserResponse(it.first.email, it.first.username))
+            ResponseEntity.ok(UserResponse(it.first.email))
           }
         }
   }
@@ -73,13 +73,10 @@ data class LoginRequest(
 
 data class UserResponse(
     var email: String? = null,
-    var username: String? = null,
-
-    )
+)
 
 
 data class UserRequest(
     var email: String? = null,
-    var username: String? = null,
     var password: String? = null,
 )

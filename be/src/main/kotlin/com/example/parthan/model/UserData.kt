@@ -10,7 +10,6 @@ data class UserData(
     @Id
     val id: Long? = null,
     val email: String,
-    val username: String,
     val password: String,
     @Column("create_time")
     val createTime: Instant

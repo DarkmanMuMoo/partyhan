@@ -29,7 +29,6 @@ class JwtTokenProvider {
     val email: String = userData.email
     val claims = Jwts.claims()
         .setSubject(email)
-    claims["name"] = userData.username
     claims["id"] = userData.id
     val now = Date()
     val validity = Date(now.time + 1000 * 60 * 60 * 24)
@@ -51,7 +50,6 @@ class JwtTokenProvider {
       Jwts
           .parserBuilder().setSigningKey(secretKey).build()
           .parseClaimsJws(token)
-
       true
     } catch (e: JwtException) {
       false

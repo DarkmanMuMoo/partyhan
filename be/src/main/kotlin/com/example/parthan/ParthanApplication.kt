@@ -17,6 +17,7 @@ class ParthanApplication {
     val initializer = ConnectionFactoryInitializer()
     initializer.setConnectionFactory(connectionFactory)
     initializer.setDatabasePopulator(ResourceDatabasePopulator(ClassPathResource("db/migration/schema.sql")))
+
     return initializer
   }
 

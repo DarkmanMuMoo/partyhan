@@ -14,5 +14,6 @@ class CorsGlobalConfiguration : WebFluxConfigurer {
     corsRegistry.addMapping("/**")
         .allowedOrigins("*")
         .allowedMethods("*")
+        .allowedHeaders("*") // put the http headers you want allow
   }
 }
